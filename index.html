@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Flag Game</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div class="home-box custom-box">
+            <h4>You have 15 seconds to answer each question.</h4>
+            <button type="buttton" class="start-game-btn btn">Start Game</button>
+    </div>
+
+    <div class="quiz-box custom-box">
+        <div class="stats">
+            <div class="quiz-time">
+                <div class="remaining-time">15</div>
+            </div>
+            <div class="score-board">
+                <span class="score-text">Score:</span>
+                <span class="correct-answers">0</span>
+            </div>
+        </div>
+        <div class="question-box">
+            <div class="current-question-num">
+                1/9
+            </div>
+            <div class="question-text">
+                Which country's flag is this?
+            </div>
+        </div>
+        <div class="option-box">
+            <div class="option">Great Britain</div>
+            <div class="option">Swaziland</div>
+            <div class="option">Ghana</div>
+            <div class="option">Ireland</div>
+        </div>
+
+        <div class="answer-description">
+            <p>The correct answer is: <span class="correct-answer"> Ghana </span></p>
+        </div>
+
+        <div class="next-q">
+            <button type="button" class="next-q-btn btn">Next Question</button>
+            <button type="button" class="see-result-btn btn">See Result</button>
+        </div>
+    </div>
+
+    <di class="quix-over-box custom-box">
+        <h1>Quiz Result</h1>
+        <h4>Total Questions: <span class="total-questions">9</span></h4>
+        <h4>Attempts: <span class="total-attempts">8</span></h4>
+        <h4>Correct: <span class="total-correct">3</span></h4>
+        <h4>Wrong: <span class="total-wrong">5</span></h4>
+        <h4>Percentage: <span class="total-percentage">33.33%</span></h4>
+    </div>
+</body>    
+</html>
