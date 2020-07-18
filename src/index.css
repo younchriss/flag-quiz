@@ -51,6 +51,10 @@ body {
     display: inline-block;
 }
 
+.quiz-box {
+    display: none;
+}
+
 .quiz-box .question-number{
     font-size: 20px;
     font-weight: bolder;
@@ -77,7 +81,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    border: 1px solid;
+   
 }
 
 .quiz-box .option-container{
@@ -88,7 +92,7 @@ body {
 }
 
 .quiz-box .option-container .option{
-    background-color: #ff5454;
+    background-color: rgb(110, 110, 245);
     padding: 15px;
     line-height: 20px ;
     border-radius: 6px;
@@ -99,6 +103,34 @@ body {
     text-align: center;
 }
 
-.quiz-box .answers-indicator{
+.results-box {
+    display: none;
+    font-size: 18px;
+    line-height: 25px;
+}
 
+.results-box p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 10px;;
+    line-height: 22px;
+}
+
+.results-box p span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.option > label {
+    padding-left: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.cantclick {
+    pointer-events: none;
+}
+
+.correct {
+    background-color: green;
 }

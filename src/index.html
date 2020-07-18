@@ -7,9 +7,9 @@
 </head>
 <body>
     <div class="home-box custom-box">
-        <h3>Instruction:</h3>
-        <p>Total number of questions:<span class="total-question"> 5</span></p>
-        <button type="button" class="btn">Start</button>
+        <h3>Instruction</h3>
+        <p>Total number of questions: <span class="total-question"> </span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Start</button>
     </div>
 
     <div class="quiz-box custom-box">
@@ -28,12 +28,14 @@
         <div class="next-question-btn"> 
             <button type="button" class="btn" onclick="next()">Next</button>
         </div>
-        <div class="answers-indicator">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
     </div>
+
+    <div class="results-box custom-box">
+        <h3>Results</h3>
+        <p>You got <span class="correctAnswers"></span> out of <span class="total-question-end"></span></p>
+        <button type="button" class="btn" onclick="restartQuiz()">Start Again </button>
+    </div>
+
 
 <script src="index.js"></script>
 <script src="app.js"></script>      
